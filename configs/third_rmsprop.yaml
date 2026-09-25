@@ -1,0 +1,15 @@
+# TRACK C  --  owner: <member C>   *** MODEL CHOICE TBD ***
+# Placeholder so the third person has somewhere to start. RMSprop + OneCycle is
+# the third distinct optimisation story (adaptive, but not Adam-family momentum).
+_base_: base.yaml
+
+model:
+  name: efficientnet_b0
+  pretrained: true
+
+optim:
+  name: rmsprop
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  scheduler: onecycle
+  max_lr: 3.0e-3

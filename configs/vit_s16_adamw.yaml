@@ -1,0 +1,25 @@
+# TRACK B (ViT)  --  owner: <member B>
+# AdamW + cosine + warmup: transformers need the warmup and are unstable under
+# plain SGD, which is itself a finding worth writing up for question (c).
+# Note the much smaller LR -- fine-tuning a pretrained ViT at 1e-2 will diverge.
+_base_: base.yaml
+
+epochs: 8
+
+data:
+  img_size: 224
+  batch_size: 32          # drop to 16 if you hit OOM
+  augment: standard
+
+model:
+  name: vit_s16
+  pretrained: true
+
+optim:
+  name: adamw
+  lr: 5.0e-5
+  weight_decay: 0.05
+  scheduler: cosine
+  warmup_epochs: 1
+  label_smoothing: 0.1
+  grad_clip: 1.0

@@ -1,0 +1,25 @@
+# Tiny CPU-runnable config. Use this to check your environment works before
+# queueing anything on NSCC:
+#   python train.py --config configs/smoke.yaml --owner <you> --note smoke
+_base_: base.yaml
+
+epochs: 1
+amp: false
+device: cpu
+
+data:
+  img_size: 64
+  batch_size: 16
+  train_per_class: 50
+  val_per_class: 25
+  num_workers: 0
+  augment: standard
+
+model:
+  name: simple_cnn
+  pretrained: false
+
+optim:
+  name: adamw
+  lr: 1.0e-3
+  scheduler: none

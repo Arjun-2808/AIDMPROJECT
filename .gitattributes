@@ -1,0 +1,8 @@
+# Normalise line endings so Windows/macOS/Linux collaborators don't produce
+# whole-file diffs on every commit.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.pt  binary
+*.pth binary
