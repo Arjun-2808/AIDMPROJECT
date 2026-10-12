@@ -7,7 +7,7 @@ Deadline: **13 Nov 2026**.
 ```
 src/
   resnet/     CNN (ResNet)          owner: TBD
-  vit/        Vision Transformer    owner: TBD
+  vit/        Vision Transformer    owner: Arjun
   tbd/        third model, TBD      owner: TBD
 results/      final results from each track
 ```

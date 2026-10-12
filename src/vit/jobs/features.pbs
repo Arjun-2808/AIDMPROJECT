@@ -1,0 +1,10 @@
+#!/bin/bash
+# Frozen features + logistic regression / RBF-SVM / kNN (conventional-classifier comparison).
+#PBS -N features_svm
+#PBS -q normal
+#PBS -l select=1:ngpus=1
+#PBS -l walltime=02:00:00
+#PBS -j oe
+#PBS -o logs/
+source "$PBS_O_WORKDIR/jobs/env.sh"
+"$PY" features_svm.py

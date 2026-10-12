@@ -1,0 +1,73 @@
+{
+  "run": "/home/users/ntu/arjun022/scratch/AIDM/runs/dvc/vit_b-finetune-nall-basic-224px-lr2e-05-s2",
+  "best_val_acc": 0.9976,
+  "n_val": 5000,
+  "n_val_errors": 12,
+  "val_cat_predicted_dog": 9,
+  "val_dog_predicted_cat": 3,
+  "test_pred_dog": 259,
+  "test_pred_cat": 241,
+  "test_uncertain_ids": [],
+  "val_errors": [
+    {
+      "path": "val/cat/cat.11565.jpg",
+      "label": "cat",
+      "p_dog": 0.999985
+    },
+    {
+      "path": "val/cat/cat.6734.jpg",
+      "label": "cat",
+      "p_dog": 0.999934
+    },
+    {
+      "path": "val/cat/cat.3105.jpg",
+      "label": "cat",
+      "p_dog": 0.999731
+    },
+    {
+      "path": "val/cat/cat.7920.jpg",
+      "label": "cat",
+      "p_dog": 0.999542
+    },
+    {
+      "path": "val/dog/dog.6489.jpg",
+      "label": "dog",
+      "p_dog": 0.000519
+    },
+    {
+      "path": "val/cat/cat.9882.jpg",
+      "label": "cat",
+      "p_dog": 0.998499
+    },
+    {
+      "path": "val/cat/cat.5324.jpg",
+      "label": "cat",
+      "p_dog": 0.998132
+    },
+    {
+      "path": "val/dog/dog.7332.jpg",
+      "label": "dog",
+      "p_dog": 0.013637
+    },
+    {
+      "path": "val/dog/dog.10524.jpg",
+      "label": "dog",
+      "p_dog": 0.014504
+    },
+    {
+      "path": "val/cat/cat.7377.jpg",
+      "label": "cat",
+      "p_dog": 0.871256
+    },
+    {
+      "path": "val/cat/cat.2150.jpg",
+      "label": "cat",
+      "p_dog": 0.695958
+    },
+    {
+      "path": "val/cat/cat.2939.jpg",
+      "label": "cat",
+      "p_dog": 0.560493
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+#!/bin/bash
+# ~10 min end-to-end check of every script on a few images, written to runs_smoke/ (safe to delete).
+#PBS -N smoke
+#PBS -q normal
+#PBS -l select=1:ngpus=1
+#PBS -l walltime=00:30:00
+#PBS -j oe
+#PBS -o logs/
+source "$PBS_O_WORKDIR/jobs/env.sh"
+set -e
+export IE4483_OUT=$IE4483_OUT/../runs_smoke IE4483_RESULTS=results_smoke
+"$PY" -c "import torch; assert torch.cuda.is_available(), 'no GPU visible'; print(torch.cuda.get_device_name())"
+"$PY" sweep.py dvc --index 0 --seeds 0 -- --limit 256 --epochs 1 --overwrite
+"$PY" sweep.py cifar --index 4 --seeds 0 -- --limit 1024 --epochs 1 --overwrite
+"$PY" features_svm.py --backbones pixels,vit_s --limit 300
+"$PY" analyze_dvc.py
+"$PY" summarize.py
+echo "SMOKE TEST PASSED"

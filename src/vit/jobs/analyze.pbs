@@ -1,0 +1,11 @@
+#!/bin/bash
+# Error analysis + attention maps for the best saved Dogs vs. Cats run, then summary tables/plots.
+#PBS -N analyze
+#PBS -q normal
+#PBS -l select=1:ngpus=1
+#PBS -l walltime=00:45:00
+#PBS -j oe
+#PBS -o logs/
+source "$PBS_O_WORKDIR/jobs/env.sh"
+"$PY" analyze_dvc.py
+"$PY" summarize.py

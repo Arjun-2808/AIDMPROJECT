@@ -1,0 +1,14 @@
+### CIFAR-10 per-class recall, ViT-B/16 (balanced training)
+
+| class | recall_% |
+|---|---|
+| airplane | 99.53 |
+| automobile | 99.37 |
+| bird | 99.07 |
+| cat | 97.3 |
+| deer | 99.03 |
+| dog | 97.8 |
+| frog | 99.7 |
+| horse | 99.37 |
+| ship | 99.77 |
+| truck | 98.33 |

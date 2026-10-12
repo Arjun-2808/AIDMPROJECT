@@ -1,0 +1,10 @@
+#!/bin/bash
+# Array job: one sweep config (all seeds) per index. Submitted by jobs/submit.sh with
+#   -v TASK=dvc|cifar  -J 0-<n-1>
+#PBS -q normal
+#PBS -l select=1:ngpus=1
+#PBS -l walltime=02:00:00
+#PBS -j oe
+#PBS -o logs/
+source "$PBS_O_WORKDIR/jobs/env.sh"
+"$PY" sweep.py "$TASK" --index "$PBS_ARRAY_INDEX"
