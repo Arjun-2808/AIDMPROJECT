@@ -1,0 +1,4 @@
+# Versions the scripts were tested with (2026-09). torch installs the CUDA-bundled wheel on Linux.
+ultralytics==8.4.162
+torch==2.14.0
+torchvision==0.29.0

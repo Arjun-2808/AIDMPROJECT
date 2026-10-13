@@ -1,5 +1,5 @@
 # Data (~1.15 GB, never commit)
-data/
+datasets/
 *.zip
 
 # Model weights
