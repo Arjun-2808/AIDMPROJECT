@@ -1,0 +1,269 @@
+{
+  "run": "C:\\Users\\Dun Yan\\Desktop\\AIDM_PROJECT\\src\\resnet\\outputs\\runs\\dvc\\resnet18-best-s2027",
+  "best_val_acc": 0.99,
+  "n_val": 5000,
+  "n_val_errors": 50,
+  "val_cat_predicted_dog": 26,
+  "val_dog_predicted_cat": 24,
+  "test_pred_dog": 260,
+  "test_pred_cat": 240,
+  "test_uncertain_ids": [
+    143,
+    465,
+    46,
+    49,
+    16
+  ],
+  "val_errors": [
+    {
+      "path": "val/cat/cat.7920.jpg",
+      "label": "cat",
+      "p_dog": 1.0
+    },
+    {
+      "path": "val/cat/cat.9897.jpg",
+      "label": "cat",
+      "p_dog": 0.999991
+    },
+    {
+      "path": "val/cat/cat.738.jpg",
+      "label": "cat",
+      "p_dog": 0.999932
+    },
+    {
+      "path": "val/dog/dog.6528.jpg",
+      "label": "dog",
+      "p_dog": 0.000104
+    },
+    {
+      "path": "val/cat/cat.11565.jpg",
+      "label": "cat",
+      "p_dog": 0.99985
+    },
+    {
+      "path": "val/cat/cat.10151.jpg",
+      "label": "cat",
+      "p_dog": 0.999835
+    },
+    {
+      "path": "val/cat/cat.2893.jpg",
+      "label": "cat",
+      "p_dog": 0.999283
+    },
+    {
+      "path": "val/dog/dog.7076.jpg",
+      "label": "dog",
+      "p_dog": 0.001055
+    },
+    {
+      "path": "val/dog/dog.11836.jpg",
+      "label": "dog",
+      "p_dog": 0.006985
+    },
+    {
+      "path": "val/cat/cat.6734.jpg",
+      "label": "cat",
+      "p_dog": 0.992169
+    },
+    {
+      "path": "val/dog/dog.5135.jpg",
+      "label": "dog",
+      "p_dog": 0.009467
+    },
+    {
+      "path": "val/cat/cat.1772.jpg",
+      "label": "cat",
+      "p_dog": 0.990505
+    },
+    {
+      "path": "val/dog/dog.9311.jpg",
+      "label": "dog",
+      "p_dog": 0.011687
+    },
+    {
+      "path": "val/cat/cat.11544.jpg",
+      "label": "cat",
+      "p_dog": 0.9858
+    },
+    {
+      "path": "val/dog/dog.10524.jpg",
+      "label": "dog",
+      "p_dog": 0.015922
+    },
+    {
+      "path": "val/dog/dog.5336.jpg",
+      "label": "dog",
+      "p_dog": 0.028926
+    },
+    {
+      "path": "val/cat/cat.10520.jpg",
+      "label": "cat",
+      "p_dog": 0.968321
+    },
+    {
+      "path": "val/dog/dog.7595.jpg",
+      "label": "dog",
+      "p_dog": 0.033621
+    },
+    {
+      "path": "val/dog/dog.1838.jpg",
+      "label": "dog",
+      "p_dog": 0.036908
+    },
+    {
+      "path": "val/dog/dog.6199.jpg",
+      "label": "dog",
+      "p_dog": 0.04123
+    },
+    {
+      "path": "val/cat/cat.10912.jpg",
+      "label": "cat",
+      "p_dog": 0.953708
+    },
+    {
+      "path": "val/cat/cat.12365.jpg",
+      "label": "cat",
+      "p_dog": 0.952086
+    },
+    {
+      "path": "val/dog/dog.9109.jpg",
+      "label": "dog",
+      "p_dog": 0.062274
+    },
+    {
+      "path": "val/dog/dog.4808.jpg",
+      "label": "dog",
+      "p_dog": 0.066478
+    },
+    {
+      "path": "val/cat/cat.9277.jpg",
+      "label": "cat",
+      "p_dog": 0.916185
+    },
+    {
+      "path": "val/dog/dog.1269.jpg",
+      "label": "dog",
+      "p_dog": 0.084342
+    },
+    {
+      "path": "val/cat/cat.8289.jpg",
+      "label": "cat",
+      "p_dog": 0.907722
+    },
+    {
+      "path": "val/dog/dog.4198.jpg",
+      "label": "dog",
+      "p_dog": 0.10226
+    },
+    {
+      "path": "val/dog/dog.1864.jpg",
+      "label": "dog",
+      "p_dog": 0.103115
+    },
+    {
+      "path": "val/cat/cat.7323.jpg",
+      "label": "cat",
+      "p_dog": 0.896659
+    },
+    {
+      "path": "val/cat/cat.2939.jpg",
+      "label": "cat",
+      "p_dog": 0.871748
+    },
+    {
+      "path": "val/cat/cat.12390.jpg",
+      "label": "cat",
+      "p_dog": 0.869604
+    },
+    {
+      "path": "val/dog/dog.8507.jpg",
+      "label": "dog",
+      "p_dog": 0.136724
+    },
+    {
+      "path": "val/cat/cat.11149.jpg",
+      "label": "cat",
+      "p_dog": 0.860896
+    },
+    {
+      "path": "val/cat/cat.2150.jpg",
+      "label": "cat",
+      "p_dog": 0.845847
+    },
+    {
+      "path": "val/cat/cat.12131.jpg",
+      "label": "cat",
+      "p_dog": 0.84241
+    },
+    {
+      "path": "val/dog/dog.6769.jpg",
+      "label": "dog",
+      "p_dog": 0.1585
+    },
+    {
+      "path": "val/dog/dog.12353.jpg",
+      "label": "dog",
+      "p_dog": 0.178454
+    },
+    {
+      "path": "val/dog/dog.4065.jpg",
+      "label": "dog",
+      "p_dog": 0.226891
+    },
+    {
+      "path": "val/dog/dog.2819.jpg",
+      "label": "dog",
+      "p_dog": 0.259943
+    },
+    {
+      "path": "val/cat/cat.10355.jpg",
+      "label": "cat",
+      "p_dog": 0.712378
+    },
+    {
+      "path": "val/dog/dog.7332.jpg",
+      "label": "dog",
+      "p_dog": 0.29381
+    },
+    {
+      "path": "val/dog/dog.5925.jpg",
+      "label": "dog",
+      "p_dog": 0.34443
+    },
+    {
+      "path": "val/cat/cat.2211.jpg",
+      "label": "cat",
+      "p_dog": 0.643049
+    },
+    {
+      "path": "val/cat/cat.8600.jpg",
+      "label": "cat",
+      "p_dog": 0.632226
+    },
+    {
+      "path": "val/cat/cat.9882.jpg",
+      "label": "cat",
+      "p_dog": 0.606265
+    },
+    {
+      "path": "val/dog/dog.8267.jpg",
+      "label": "dog",
+      "p_dog": 0.395251
+    },
+    {
+      "path": "val/dog/dog.10842.jpg",
+      "label": "dog",
+      "p_dog": 0.467636
+    },
+    {
+      "path": "val/cat/cat.10441.jpg",
+      "label": "cat",
+      "p_dog": 0.532068
+    },
+    {
+      "path": "val/cat/cat.3973.jpg",
+      "label": "cat",
+      "p_dog": 0.516454
+    }
+  ]
+}
