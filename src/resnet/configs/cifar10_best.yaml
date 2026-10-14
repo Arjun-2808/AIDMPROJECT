@@ -1,0 +1,24 @@
+# Best Optuna trial (#20, 98.86% val acc); full search in results/resnet/optuna_search.md
+# CIFAR-10: 5 epochs (as in the ViT track), final epoch evaluated on test, no early stopping
+task: cifar10
+name: best
+model: resnet18
+pretrained: true
+num_classes: 10
+image_size: 160
+batch_size: 64
+epochs: 5
+patience: 5
+optimizer: nadam
+learning_rate: 8.181391538335567e-05
+weight_decay: 1.8448923279285054e-06
+momentum: 0.9
+dropout: 0.31103473606481874
+fine_tuning: full
+scheduler: cosine
+warmup_epochs: 2
+label_smoothing: 0.0
+seed: 2026
+num_workers: 0  # >0 crashes the CUDA driver on this laptop
+amp: true
+cudnn_safe: false  # cuDNN on: same accuracy as the Optuna setting (off), ~25% faster

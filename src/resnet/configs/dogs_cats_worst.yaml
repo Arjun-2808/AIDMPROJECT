@@ -1,0 +1,23 @@
+# Worst completed Optuna trial (#0, 95.36% val acc); full search in results/resnet/optuna_search.md
+task: dogs_cats
+name: worst
+model: resnet18
+pretrained: true
+num_classes: 2
+image_size: 160
+batch_size: 16
+epochs: 15
+patience: 4
+optimizer: sgd_nesterov
+learning_rate: 1.6604035607215475e-05
+weight_decay: 8.263412613109886e-05
+momentum: 0.9
+dropout: 0.27912505743292915
+fine_tuning: classifier_only
+scheduler: cosine
+warmup_epochs: 2
+label_smoothing: 0.0
+seed: 2026
+num_workers: 0  # >0 crashes the CUDA driver on this laptop
+amp: true
+cudnn_safe: false  # cuDNN on: same accuracy as the Optuna setting (off), ~25% faster
