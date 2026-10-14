@@ -1,23 +1,22 @@
-# AIDM_PROJECT — IE4483 Mini Project (Option 2): Dogs vs. Cats
+# AIDM_PROJECT
 
-Deadline: **13 Nov 2026**.
+IE4483 Mini Project (Option 2): Dogs vs. Cats. Deadline: 13 Nov 2026.
 
 ## Layout
 
-```
+```text
 src/
-  resnet/     CNN (ResNet)          owner: TBD
-  vit/        Vision Transformer    owner: Arjun
-  tbd/        third model, TBD      owner: TBD
-results/      final results from each track
+  resnet/   ResNet-18 (CNN)
+  vit/      Vision Transformer
+  yolo/     YOLO classifier
+results/    final results per track
+paper/      report
 ```
 
-Each person works only inside their own `src/<track>/` folder: code, logs,
-requirements, whatever you need. Put your final numbers in `results/`.
+Each track is self-contained: see its own `README.md` for setup and usage.
 
 ## Data
 
-The dataset (`datasets.zip`, 1.1 GB, link in the project brief) is **not** in
-the repo. Unzip it into `data/`, which is gitignored.
+`datasets.zip` (1.1 GB, link in the project brief) is not in the repo. Unzip it into `data/` (gitignored).
 
-Labels for `submission.csv`: **cat = 0, dog = 1**.
+Submission labels: cat = 0, dog = 1.
