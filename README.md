@@ -10,7 +10,6 @@ src/
   vit/      Vision Transformer
   yolo/     YOLO classifier
 results/    final results per track
-paper/      report
 ```
 
 Each track is self-contained: see its own `README.md` for setup and usage.
